@@ -3,7 +3,7 @@
  * Difficulty: Medium
  * URL: https://leetcode.com/problems/trapping-rain-water/
  * Time Complexity: O(N)
- * Space Complexity: O(N)
+ * Space Complexity: O(1)
  */
 
 class Solution {

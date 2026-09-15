@@ -7,26 +7,26 @@
 
 ## 🧠 Algorithmic Invariants & Core Intuition
 
-The water trapped above any elevation bar is strictly bounded by the minimum of the highest wall to its left and the highest wall to its right, minus its own height. Precomputing these left and right maximum boundaries via two directional passes allows calculating the trapped water per cell in O(1) time.
+Applied **Array** to efficiently process the problem state in O(N) time.
 
 ---
 
 ## ⚡ Complexity Analysis
 
 - **Time Complexity**: `O(N)`
-- **Space Complexity**: `O(N)`
+- **Space Complexity**: `O(1)`
 
 ---
 
 ## ⚠️ Potential Pitfalls & Edge Cases
 
-Accessing `h[0]` and `h[n-1]` without checking if the array is empty will cause out-of-bounds runtime errors. Additionally, while correct, this precomputation uses O(N) extra space which can be optimized to O(1) auxiliary space using a two-pointer approach.
+_None recorded._
 
 ---
 
 ## 🏷️ Algorithmic Patterns & Tags
 
-`Array` `Two Pointers` `Dynamic Programming` `Stack` `Monotonic Stack` `Prefix / Suffix Precomputation`
+`Array` `Two Pointers` `Dynamic Programming` `Stack` `Monotonic Stack`
 
 ---
 
@@ -36,7 +36,7 @@ Accessing `h[0]` and `h[n-1]` without checking if the array is empty will cause 
 | :--- | :--- |
 | **Stability ($S$)** | 209.19 days |
 | **Expected Retrievability ($R$)** | 100.0% |
-| **Total Review Repetitions** | 4 |
+| **Total Review Repetitions** | 5 |
 | **Next Review Due** | 4/12/2027 |
 
 ---
