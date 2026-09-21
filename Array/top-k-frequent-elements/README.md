@@ -7,26 +7,26 @@
 
 ## 🧠 Algorithmic Invariants & Core Intuition
 
-Element frequencies are aggregated using a hash map to map each unique value to its count. A min-heap bounded to size K retains only the K highest frequency elements by continuously evicting the current minimum frequency candidate in O(log k) time.
+Count frequencies using a hash map, then maintain a min-heap of size k. The heap keeps the k largest frequencies by evicting the smallest whenever size exceeds k, so the remaining elements are the top k frequent.
 
 ---
 
 ## ⚡ Complexity Analysis
 
-- **Time Complexity**: `O(N log k)`
-- **Space Complexity**: `O(N)`
+- **Time Complexity**: `O(n log k)`
+- **Space Complexity**: `O(n)`
 
 ---
 
 ## ⚠️ Potential Pitfalls & Edge Cases
 
-Using a max-heap pushes time complexity to O(N log N) since all unique elements must be stored; a min-heap must be used to maintain the bounded size K. In C++ priority_queue, the comparison order defaults to the first pair member, so pair elements must be ordered as {frequency, element} rather than {element, frequency}.
+Ensure k is valid (1 ≤ k ≤ number of unique elements). The heap stores pairs (frequency, value), so ties are broken by value but that does not affect correctness. If k equals the number of unique elements, no eviction occurs. The output order is arbitrary and not required to be sorted.
 
 ---
 
 ## 🏷️ Algorithmic Patterns & Tags
 
-`Array` `Hash Table` `Divide and Conquer` `Sorting` `Heap (Priority Queue)` `Bucket Sort` `Counting` `Quickselect` `Heap / Priority Queue (Top K)` `Hash Table (Frequency Map)`
+`Array` `Hash Table` `Divide and Conquer` `Sorting` `Heap (Priority Queue)` `Bucket Sort` `Counting` `Quickselect`
 
 ---
 
@@ -36,7 +36,7 @@ Using a max-heap pushes time complexity to O(N log N) since all unique elements 
 | :--- | :--- |
 | **Stability ($S$)** | 0.83 days |
 | **Expected Retrievability ($R$)** | 100.0% |
-| **Total Review Repetitions** | 6 |
+| **Total Review Repetitions** | 7 |
 | **Next Review Due** | 9/22/2026 |
 
 ---
