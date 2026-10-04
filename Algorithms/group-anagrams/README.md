@@ -7,26 +7,26 @@
 
 ## 🧠 Algorithmic Invariants & Core Intuition
 
-Anagrams are equivalent under character sorting, so the sorted version of each string is a canonical key. Group all original strings in a hash map keyed by this sorted string, then collect each bucket as one anagram group.
+Applied **Direct / Greedy Simulation** to efficiently process the problem state in O(N²) time.
 
 ---
 
 ## ⚡ Complexity Analysis
 
-- **Time Complexity**: `O(n * k log k)`
-- **Space Complexity**: `O(n * k)`
+- **Time Complexity**: `O(N²)`
+- **Space Complexity**: `O(N)`
 
 ---
 
 ## ⚠️ Potential Pitfalls & Edge Cases
 
-Past errors: Compile Error
+_None recorded._
 
 ---
 
 ## 🏷️ Algorithmic Patterns & Tags
 
-`Hash Map` `Sorting`
+`Direct / Greedy Simulation`
 
 ---
 
@@ -36,7 +36,7 @@ Past errors: Compile Error
 | :--- | :--- |
 | **Stability ($S$)** | 166.73 days |
 | **Expected Retrievability ($R$)** | 100.0% |
-| **Total Review Repetitions** | 5 |
+| **Total Review Repetitions** | 6 |
 | **Next Review Due** | 3/21/2027 |
 
 ---

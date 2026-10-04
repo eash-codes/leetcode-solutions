@@ -2,8 +2,8 @@
  * Problem: Group Anagrams
  * Difficulty: Medium
  * URL: https://leetcode.com/problems/group-anagrams/
- * Time Complexity: O(n * k log k)
- * Space Complexity: O(n * k)
+ * Time Complexity: O(N²)
+ * Space Complexity: O(N)
  */
 
 class Solution {
