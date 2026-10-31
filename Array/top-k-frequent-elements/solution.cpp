@@ -2,8 +2,8 @@
  * Problem: Top K Frequent Elements
  * Difficulty: Medium
  * URL: https://leetcode.com/problems/top-k-frequent-elements/
- * Time Complexity: O(n log k)
- * Space Complexity: O(n)
+ * Time Complexity: O(N²)
+ * Space Complexity: O(N)
  */
 
 class Solution {

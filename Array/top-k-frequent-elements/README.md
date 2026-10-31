@@ -2,31 +2,31 @@
 
 [![LeetCode Problem](https://img.shields.io/badge/LeetCode-Problem_Link-FFA116?style=flat&logo=leetcode&logoColor=black)](https://leetcode.com/problems/top-k-frequent-elements/)
 [![Difficulty](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat)]()
-[![FSRS Status](https://img.shields.io/badge/FSRS_Mastery-Learning-38bdf8?style=flat)]()
+[![FSRS Status](https://img.shields.io/badge/FSRS_Mastery-Retained-38bdf8?style=flat)]()
 [![Retrievability](https://img.shields.io/badge/Recall_Probability-100.0%25-10b981?style=flat)]()
 
 ## 🧠 Algorithmic Invariants & Core Intuition
 
-Count frequencies using a hash map, then maintain a min-heap of size k. The heap keeps the k largest frequencies by evicting the smallest whenever size exceeds k, so the remaining elements are the top k frequent.
+Applied **Breadth-First Search (BFS)** to efficiently process the problem state in O(N²) time.
 
 ---
 
 ## ⚡ Complexity Analysis
 
-- **Time Complexity**: `O(n log k)`
-- **Space Complexity**: `O(n)`
+- **Time Complexity**: `O(N²)`
+- **Space Complexity**: `O(N)`
 
 ---
 
 ## ⚠️ Potential Pitfalls & Edge Cases
 
-Ensure k is valid (1 ≤ k ≤ number of unique elements). The heap stores pairs (frequency, value), so ties are broken by value but that does not affect correctness. If k equals the number of unique elements, no eviction occurs. The output order is arbitrary and not required to be sorted.
+_None recorded._
 
 ---
 
 ## 🏷️ Algorithmic Patterns & Tags
 
-`Array` `Hash Table` `Divide and Conquer` `Sorting` `Heap (Priority Queue)` `Bucket Sort` `Counting` `Quickselect`
+`Array` `Hash Table` `Divide and Conquer` `Sorting` `Heap (Priority Queue)` `Bucket Sort` `Counting` `Quickselect` `Breadth-First Search (BFS)`
 
 ---
 
@@ -34,10 +34,10 @@ Ensure k is valid (1 ≤ k ≤ number of unique elements). The heap stores pairs
 
 | Metric | Value |
 | :--- | :--- |
-| **Stability ($S$)** | 0.83 days |
+| **Stability ($S$)** | 46.73 days |
 | **Expected Retrievability ($R$)** | 100.0% |
-| **Total Review Repetitions** | 7 |
-| **Next Review Due** | 9/22/2026 |
+| **Total Review Repetitions** | 8 |
+| **Next Review Due** | 17/12/2026 |
 
 ---
 
