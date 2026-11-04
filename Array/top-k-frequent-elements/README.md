@@ -7,26 +7,26 @@
 
 ## 🧠 Algorithmic Invariants & Core Intuition
 
-Applied **Breadth-First Search (BFS)** to efficiently process the problem state in O(N²) time.
+Counting frequencies maps elements to their occurrences in O(N) time. By maintaining a min-heap restricted to size k, the smallest frequency element is continually evicted, guaranteeing that only the top k most frequent elements remain in the heap.
 
 ---
 
 ## ⚡ Complexity Analysis
 
-- **Time Complexity**: `O(N²)`
-- **Space Complexity**: `O(N)`
+- **Time Complexity**: `O(N log k), where N is the size of nums and k is the target frequency threshold. Counting takes O(N), and inserting U unique elements into a min-heap of max size k takes O(U log k).`
+- **Space Complexity**: `O(U + k), where U is the number of unique elements in nums stored in the frequency map, and k is the size limit of the min-heap. In the worst case, this is O(N).`
 
 ---
 
 ## ⚠️ Potential Pitfalls & Edge Cases
 
-_None recorded._
+Remember that C++ priority_queue defaults to a max-heap, so `greater` must be explicitly passed to convert it to a min-heap. Another potential pitfall is assuming bucket sort optimization isn't needed; while O(N log k) works well, bucket sort can achieve optimal O(N) time.
 
 ---
 
 ## 🏷️ Algorithmic Patterns & Tags
 
-`Array` `Hash Table` `Divide and Conquer` `Sorting` `Heap (Priority Queue)` `Bucket Sort` `Counting` `Quickselect` `Breadth-First Search (BFS)`
+`Array` `Hash Table` `Divide and Conquer` `Sorting` `Heap (Priority Queue)` `Bucket Sort` `Counting` `Quickselect` `Min-Heap / Priority Queue`
 
 ---
 
@@ -34,10 +34,10 @@ _None recorded._
 
 | Metric | Value |
 | :--- | :--- |
-| **Stability ($S$)** | 46.73 days |
+| **Stability ($S$)** | 66.03 days |
 | **Expected Retrievability ($R$)** | 100.0% |
-| **Total Review Repetitions** | 8 |
-| **Next Review Due** | 17/12/2026 |
+| **Total Review Repetitions** | 9 |
+| **Next Review Due** | 10/1/2027 |
 
 ---
 
