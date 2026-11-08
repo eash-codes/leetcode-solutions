@@ -2,8 +2,8 @@
  * Problem: Top K Frequent Elements
  * Difficulty: Medium
  * URL: https://leetcode.com/problems/top-k-frequent-elements/
- * Time Complexity: O(N log k), where N is the size of nums and k is the target frequency threshold. Counting takes O(N), and inserting U unique elements into a min-heap of max size k takes O(U log k).
- * Space Complexity: O(U + k), where U is the number of unique elements in nums stored in the frequency map, and k is the size limit of the min-heap. In the worst case, this is O(N).
+ * Time Complexity: O(N²)
+ * Space Complexity: O(N)
  */
 
 class Solution {
