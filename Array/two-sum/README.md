@@ -2,7 +2,7 @@
 
 [![LeetCode Problem](https://img.shields.io/badge/LeetCode-Problem_Link-FFA116?style=flat&logo=leetcode&logoColor=black)](https://leetcode.com/problems/two-sum/)
 [![Difficulty](https://img.shields.io/badge/Difficulty-Medium-ffc01e?style=flat)]()
-[![FSRS Status](https://img.shields.io/badge/FSRS_Mastery-Reviewing-38bdf8?style=flat)]()
+[![FSRS Status](https://img.shields.io/badge/FSRS_Mastery-Retained-38bdf8?style=flat)]()
 [![Retrievability](https://img.shields.io/badge/Recall_Probability-100.0%25-10b981?style=flat)]()
 
 ## 🧠 Algorithmic Invariants & Core Intuition
@@ -36,7 +36,7 @@ _None recorded._
 | :--- | :--- |
 | **Stability ($S$)** | 15.47 days |
 | **Expected Retrievability ($R$)** | 100.0% |
-| **Total Review Repetitions** | 1 |
+| **Total Review Repetitions** | 2 |
 | **Next Review Due** | 26/11/2026 |
 
 ---
